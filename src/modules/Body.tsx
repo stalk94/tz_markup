@@ -15,7 +15,7 @@ const mock = Array.from({ length: 8 }, (_, i) => ({
 
 export default function Body({ setMod, mod }) {
     return (
-        <main className="max-w-3xl mx-auto flex flex-col w-full p-4">
+        <main className="max-w-4xl mx-auto flex flex-col w-full p-4">
             <Toogler
                 mod={mod}
                 setMod={setMod}
