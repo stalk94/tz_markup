@@ -9,35 +9,33 @@ export default function Header() {
 
 
     return (
-        <header className="bg-[#ffffff76] shadow-sm p-6 items-center flex">
-            <div className="mx-auto flex items-center justify-center gap-24">
-                <Logo
-                    width={120}
-                    height={120}
-                />
-                <div className="flex flex-col">
-                    <div className="flex items-center gap-4">
-                        <div id="logo-text" className="text-2xl font-montserrat font-medium">
+        <header className="bg-[#ffffff76] shadow-sm p-6">
+            <div className="mx-auto flex flex-col md:flex-row md:items-center justify-center gap-6 md:gap-24">
+
+                <div className="flex justify-center w-full md:w-auto">
+                    <Logo width={100} height={100} />
+                </div>
+
+                <div className="flex flex-col text-center md:text-left">
+                    <div className="flex flex-col md:flex-row items-center gap-3 md:gap-4">
+                        <div className="text-2xl font-montserrat font-medium">
                             monblanproject
                         </div>
+
                         <button className="text-sm border border-[#7cbef7] text-[#7cbef7] px-4 py-1 rounded">
                             Start on 17-02-2016
                         </button>
                     </div>
 
-                    <div className="mt-2 text-[black] flex gap-6 text-sm font-medium">
+                    <div className="mt-2 text-black flex flex-wrap justify-center md:justify-start gap-4 text-sm font-medium">
                         <span>870 posts</span>
                         <span>11,787 followers</span>
                         <span>112 following</span>
                     </div>
 
-
-                    {/* Filters */}
-                    <div className="mt-6 flex gap-4 flex-wrap">
+                    <div className="mt-6 flex gap-4 flex-wrap justify-center md:justify-start">
                         <div className="flex items-center gap-2">
-                            <span className="text-[black] text-sm">
-                                Date
-                            </span>
+                            <span className="text-black text-sm">Date</span>
                             <CustomDatePicker
                                 placeholder="from"
                                 selected={from}
@@ -54,6 +52,7 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
+
             </div>
         </header>
     );

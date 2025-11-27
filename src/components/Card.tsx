@@ -43,7 +43,7 @@ export default function Card({ item, mod }) {
 
     return (
         <div
-            className="bg-white shadow-sm rounded p-4 mb-4 flex gap-4 items-stretch"
+            className="bg-white shadow-sm rounded mb-4 flex gap-4 items-stretch"
         >
             <img
                 src={item.img}

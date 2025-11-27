@@ -8,7 +8,7 @@ export default function Toogler({ mod, setMod }) {
 
 
     return (
-        <div className="ml-auto flex gap-3 mt-4 cursor-pointer">
+        <div className="ml-auto flex gap-3 cursor-pointer">
             <FaList color={color1} size={24} onClick={()=> setMod('line')} />
             <BsGrid3X3GapFill color={color2} size={24} onClick={()=> setMod('grid')} />
         </div>

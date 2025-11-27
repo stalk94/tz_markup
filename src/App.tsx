@@ -8,6 +8,7 @@ import Body from "./modules/Body";
 export default function App() {
     const [ mod, setMod ] = useState<'line' | 'grid'>('line');
 
+    
     return (
         <>
             <section className="absolute w-full z-2">
@@ -18,9 +19,7 @@ export default function App() {
                 />
             </section>
 
-            <section>
-                <Layout />
-            </section>
+            <Layout />
         </>
     );
 }

@@ -20,7 +20,7 @@ export default function CustomDatePicker({ selected, onChange, placeholder }) {
                 selected={selected}
                 onChange={onChange}
                 dateFormat="dd-MM-yyyy"
-                className="px-2 py-1 w-32 rounded-l border-none focus:outline-none"
+                className="px-2 py-1 w-12 sm:w-24 rounded-l border-none focus:outline-none"
             />
             <div className="flex">
                 <button
